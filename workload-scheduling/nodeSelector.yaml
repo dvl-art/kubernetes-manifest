@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jay-pod-prod
+spec:
+  nodeSelector:
+    size: t3.xlarge     
+  containers:
+   - name: webserver
+     image: nginx
